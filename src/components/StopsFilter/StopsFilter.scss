@@ -1,0 +1,23 @@
+.stops-filter {
+  display: flow-root;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 18px 20px 0 20px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.75px;
+    align-items: flex-end;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    margin: 0 0 18px 0;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+}

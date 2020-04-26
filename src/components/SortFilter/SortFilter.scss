@@ -1,0 +1,60 @@
+.sort-filter {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+  &__item {
+    display: table-cell;
+    position: relative;
+    border: 1px solid #DFE5EC;
+    border-right: none;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+    overflow: hidden;
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+      border-right: 1px solid #DFE5EC;
+    }
+
+    .sort-filter__item-view {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      user-select: none;
+      opacity: 0.9;
+      transition: 0.2s;
+
+      &:hover {
+        background: #2196F3;
+        color: white;
+        border: none;
+      }
+    }
+
+    .sort-filter__radio {
+      display: none;
+
+      &:checked + .sort-filter__item-view {
+        background: #2196F3;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
